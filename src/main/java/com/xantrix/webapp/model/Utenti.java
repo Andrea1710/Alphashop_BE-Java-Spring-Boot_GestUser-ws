@@ -18,6 +18,7 @@ public class Utenti
 	@Indexed(unique = true)
 	private String userId;
 	private String password;
+	private String attivo;
 	
 	private List<String> ruoli;
 	
