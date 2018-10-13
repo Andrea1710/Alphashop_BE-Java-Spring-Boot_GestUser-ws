@@ -64,13 +64,13 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter
 		InMemoryUserDetailsManager manager = new InMemoryUserDetailsManager();
 
 		manager.createUser(users
-				.username("Nicola")
-				.password(new BCryptPasswordEncoder().encode("BimBumBam"))
+				.username("ReadUser")
+				.password(new BCryptPasswordEncoder().encode("BimBumBam_2018"))
 				.roles("USER").build());
 
 		manager.createUser(users
 				.username("Admin")
-				.password(new BCryptPasswordEncoder().encode("MagicaBula"))
+				.password(new BCryptPasswordEncoder().encode("MagicaBula_2018"))
 				.roles("USER", "ADMIN").build());
 
 		return manager;
