@@ -1,0 +1,13 @@
+server:
+  port: 8021
+spring:
+  application:
+    name: GestUser
+  data:
+    mongodb:
+      authentication-database: admin
+      database: ms-users
+      host: localhost
+      password: Nertek88
+      port: 37017
+      username: andrea

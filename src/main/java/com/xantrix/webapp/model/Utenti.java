@@ -19,11 +19,13 @@ public class Utenti
 	private String id;
 	
 	@Indexed(unique = true)
-	@Size(min = 6, max = 80, message = "{Size.Utenti.userId.Validation}")
+	@Size(min = 5, max = 80, message = "{Size.Utenti.userId.Validation}")
 	@NotNull(message = "{NotNull.Articoli.userId.Validation}")
 	private String userId;
-	@Size(min = 6, max = 80, message = "{Size.Utenti.password.Validation}")
+	
+	@Size(min = 8, max = 80, message = "{Size.Utenti.password.Validation}")
 	private String password;
+	
 	private String attivo;
 	
 	private List<String> ruoli;
